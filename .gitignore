@@ -4,3 +4,6 @@ package-lock.json
 configs/keysDev.js
 ./client/node_modules/
 ./client/coverage/
+./client/src/test/department/__snapshots__/
+./client/src/test/product/__snapshots__/
+./client/src/test/promotion/__snapshots__/
