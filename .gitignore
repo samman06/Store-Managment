@@ -1,0 +1,5 @@
+.idea/
+node_modules/
+package-lock.json
+configs/keysDev.js
+./client/node_modules/
