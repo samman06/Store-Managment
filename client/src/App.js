@@ -8,6 +8,7 @@ import './App.css';
 import Footer from "./components/layout/Footer";
 import Nav from "./components/layout/Nav";
 import Departments from "./components/Department/departmentOperations"
+import Products from "./components/Product/productOperations"
 import Promotions from "./components/Promotion/promotionOperations"
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                     <Route path='/departments' exact component={Footer}/>
 
                     <Route path='/products' exact component={Nav}/>
+                    <Route path='/products' exact component={Products}/>
                     <Route path='/products' exact component={Footer}/>
 
                     <Route path='/promotions' exact component={Nav}/>
