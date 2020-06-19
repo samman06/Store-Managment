@@ -8,6 +8,7 @@ import './App.css';
 import Footer from "./components/layout/Footer";
 import Nav from "./components/layout/Nav";
 import Departments from "./components/Department/departmentOperations"
+import Promotions from "./components/Promotion/promotionOperations"
 
 const App = () => {
     return (
@@ -15,7 +16,6 @@ const App = () => {
             <BrowserRouter>
                 <div className="App">
                     <Route path='/' exact component={Nav}/>
-                    <Route path='/' exact component={Home}/>
                     <Route path='/' exact component={Footer}/>
 
                     <Route path='/departments' exact component={Nav}/>
@@ -23,7 +23,6 @@ const App = () => {
                     <Route path='/departments' exact component={Footer}/>
 
                     <Route path='/products' exact component={Nav}/>
-                    <Route path='/products' exact component={Products}/>
                     <Route path='/products' exact component={Footer}/>
 
                     <Route path='/promotions' exact component={Nav}/>
