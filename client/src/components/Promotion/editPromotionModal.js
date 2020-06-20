@@ -24,10 +24,10 @@ const editPromotionModal = (props) => {
                                    onChange={onChange}/>
                             {errors.discount && <span className="error">{errors.discount}</span>}
                         </div>
-                        <div className="custom-control custom-checkbox">
-                            <input type="checkbox" className="custom-control-input"
+                        <div className="form-check">
+                            <input type="checkbox" className="form-check-input"
                                    onChange={onChange} name="active" checked={promotion.active}/>
-                            <label className="custom-control-label">Is Active ?</label>
+                            <label className="form-check-label">Is Active ?</label>
                         </div>
                     </form>
                 </ModalBody>

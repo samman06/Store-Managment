@@ -25,10 +25,10 @@ const addPromotionModal = (props) => {
                                placeholder="Promotion Discount" onChange={onChange}/>
                         {errors.discount && <span className="error">{errors.discount}</span>}
                     </div>
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" name="active"
+                    <div className="form-check">
+                        <input type="checkbox" className="form-check-input" name="active"
                                checked={active} onChange={onChange}/>
-                        <label className="custom-control-label">Is Active ?</label>
+                        <label className="form-check-label">Is Active ?</label>
                     </div>
                 </div>
                 <div className="modal-footer">

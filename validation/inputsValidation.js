@@ -28,7 +28,6 @@ class inputsValidation {
 
     validatePromotionInputs(code, discount) {
         let errors = {};
-        console.log(code,discount);
         code = !this.isEmpty(code) ? code : "";
         if (!validator.isLength(code, {min: 3, max: 25}))
             errors.code = "code must be between 3 and 25 characters";

@@ -86,17 +86,17 @@ ShallowWrapper {
                               />
                     </div>
                     <div
-                              className="custom-control custom-checkbox"
+                              className="form-check"
                     >
                               <input
                                         checked={undefined}
-                                        className="custom-control-input"
+                                        className="form-check-input"
                                         name="active"
                                         onChange={[Function]}
                                         type="checkbox"
                               />
                               <label
-                                        className="custom-control-label"
+                                        className="form-check-label"
                               >
                                         Is Active ?
                               </label>
@@ -182,17 +182,17 @@ ShallowWrapper {
                             />
               </div>
               <div
-                            className="custom-control custom-checkbox"
+                            className="form-check"
               >
                             <input
                                           checked={undefined}
-                                          className="custom-control-input"
+                                          className="form-check-input"
                                           name="active"
                                           onChange={[Function]}
                                           type="checkbox"
                             />
                             <label
-                                          className="custom-control-label"
+                                          className="form-check-label"
                             >
                                           Is Active ?
                             </label>
@@ -274,17 +274,17 @@ ShallowWrapper {
                   />
 </div>,
                 <div
-                  className="custom-control custom-checkbox"
+                  className="form-check"
 >
                   <input
                                     checked={undefined}
-                                    className="custom-control-input"
+                                    className="form-check-input"
                                     name="active"
                                     onChange={[Function]}
                                     type="checkbox"
                   />
                   <label
-                                    className="custom-control-label"
+                                    className="form-check-label"
                   >
                                     Is Active ?
                   </label>
@@ -380,18 +380,18 @@ ShallowWrapper {
                   "children": Array [
                     <input
                       checked={undefined}
-                      className="custom-control-input"
+                      className="form-check-input"
                       name="active"
                       onChange={[Function]}
                       type="checkbox"
 />,
                     <label
-                      className="custom-control-label"
+                      className="form-check-label"
 >
                       Is Active ?
 </label>,
                   ],
-                  "className": "custom-control custom-checkbox",
+                  "className": "form-check",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -401,7 +401,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "checked": undefined,
-                      "className": "custom-control-input",
+                      "className": "form-check-input",
                       "name": "active",
                       "onChange": [Function],
                       "type": "checkbox",
@@ -416,7 +416,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "Is Active ?",
-                      "className": "custom-control-label",
+                      "className": "form-check-label",
                     },
                     "ref": null,
                     "rendered": "Is Active ?",
@@ -558,17 +558,17 @@ ShallowWrapper {
                                     />
                         </div>
                         <div
-                                    className="custom-control custom-checkbox"
+                                    className="form-check"
                         >
                                     <input
                                                 checked={undefined}
-                                                className="custom-control-input"
+                                                className="form-check-input"
                                                 name="active"
                                                 onChange={[Function]}
                                                 type="checkbox"
                                     />
                                     <label
-                                                className="custom-control-label"
+                                                className="form-check-label"
                                     >
                                                 Is Active ?
                                     </label>
@@ -654,17 +654,17 @@ ShallowWrapper {
                                 />
                 </div>
                 <div
-                                className="custom-control custom-checkbox"
+                                className="form-check"
                 >
                                 <input
                                                 checked={undefined}
-                                                className="custom-control-input"
+                                                className="form-check-input"
                                                 name="active"
                                                 onChange={[Function]}
                                                 type="checkbox"
                                 />
                                 <label
-                                                className="custom-control-label"
+                                                className="form-check-label"
                                 >
                                                 Is Active ?
                                 </label>
@@ -746,17 +746,17 @@ ShallowWrapper {
                     />
 </div>,
                   <div
-                    className="custom-control custom-checkbox"
+                    className="form-check"
 >
                     <input
                                         checked={undefined}
-                                        className="custom-control-input"
+                                        className="form-check-input"
                                         name="active"
                                         onChange={[Function]}
                                         type="checkbox"
                     />
                     <label
-                                        className="custom-control-label"
+                                        className="form-check-label"
                     >
                                         Is Active ?
                     </label>
@@ -852,18 +852,18 @@ ShallowWrapper {
                     "children": Array [
                       <input
                         checked={undefined}
-                        className="custom-control-input"
+                        className="form-check-input"
                         name="active"
                         onChange={[Function]}
                         type="checkbox"
 />,
                       <label
-                        className="custom-control-label"
+                        className="form-check-label"
 >
                         Is Active ?
 </label>,
                     ],
-                    "className": "custom-control custom-checkbox",
+                    "className": "form-check",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -873,7 +873,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "checked": undefined,
-                        "className": "custom-control-input",
+                        "className": "form-check-input",
                         "name": "active",
                         "onChange": [Function],
                         "type": "checkbox",
@@ -888,7 +888,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": "Is Active ?",
-                        "className": "custom-control-label",
+                        "className": "form-check-label",
                       },
                       "ref": null,
                       "rendered": "Is Active ?",
@@ -1077,17 +1077,17 @@ ShallowWrapper {
                                 />
                         </div>
                         <div
-                                className="custom-control custom-checkbox"
+                                className="form-check"
                         >
                                 <input
                                         checked={undefined}
-                                        className="custom-control-input"
+                                        className="form-check-input"
                                         name="active"
                                         onChange={[Function]}
                                         type="checkbox"
                                 />
                                 <label
-                                        className="custom-control-label"
+                                        className="form-check-label"
                                 >
                                         Is Active ?
                                 </label>
@@ -1167,17 +1167,17 @@ ShallowWrapper {
                                     />
                         </div>
                         <div
-                                    className="custom-control custom-checkbox"
+                                    className="form-check"
                         >
                                     <input
                                                 checked={undefined}
-                                                className="custom-control-input"
+                                                className="form-check-input"
                                                 name="active"
                                                 onChange={[Function]}
                                                 type="checkbox"
                                     />
                                     <label
-                                                className="custom-control-label"
+                                                className="form-check-label"
                                     >
                                                 Is Active ?
                                     </label>
@@ -1268,17 +1268,17 @@ ShallowWrapper {
                             />
               </div>
               <div
-                            className="custom-control custom-checkbox"
+                            className="form-check"
               >
                             <input
                                           checked={undefined}
-                                          className="custom-control-input"
+                                          className="form-check-input"
                                           name="active"
                                           onChange={[Function]}
                                           type="checkbox"
                             />
                             <label
-                                          className="custom-control-label"
+                                          className="form-check-label"
                             >
                                           Is Active ?
                             </label>
@@ -1322,17 +1322,17 @@ ShallowWrapper {
                   />
 </div>,
                 <div
-                  className="custom-control custom-checkbox"
+                  className="form-check"
 >
                   <input
                                     checked={undefined}
-                                    className="custom-control-input"
+                                    className="form-check-input"
                                     name="active"
                                     onChange={[Function]}
                                     type="checkbox"
                   />
                   <label
-                                    className="custom-control-label"
+                                    className="form-check-label"
                   >
                                     Is Active ?
                   </label>
@@ -1453,18 +1453,18 @@ ShallowWrapper {
                   "children": Array [
                     <input
                       checked={undefined}
-                      className="custom-control-input"
+                      className="form-check-input"
                       name="active"
                       onChange={[Function]}
                       type="checkbox"
 />,
                     <label
-                      className="custom-control-label"
+                      className="form-check-label"
 >
                       Is Active ?
 </label>,
                   ],
-                  "className": "custom-control custom-checkbox",
+                  "className": "form-check",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -1474,7 +1474,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "checked": undefined,
-                      "className": "custom-control-input",
+                      "className": "form-check-input",
                       "name": "active",
                       "onChange": [Function],
                       "type": "checkbox",
@@ -1489,7 +1489,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "Is Active ?",
-                      "className": "custom-control-label",
+                      "className": "form-check-label",
                     },
                     "ref": null,
                     "rendered": "Is Active ?",
@@ -1634,17 +1634,17 @@ ShallowWrapper {
                                         />
                               </div>
                               <div
-                                        className="custom-control custom-checkbox"
+                                        className="form-check"
                               >
                                         <input
                                                   checked={undefined}
-                                                  className="custom-control-input"
+                                                  className="form-check-input"
                                                   name="active"
                                                   onChange={[Function]}
                                                   type="checkbox"
                                         />
                                         <label
-                                                  className="custom-control-label"
+                                                  className="form-check-label"
                                         >
                                                   Is Active ?
                                         </label>
@@ -1724,17 +1724,17 @@ ShallowWrapper {
                                           />
                             </div>
                             <div
-                                          className="custom-control custom-checkbox"
+                                          className="form-check"
                             >
                                           <input
                                                         checked={undefined}
-                                                        className="custom-control-input"
+                                                        className="form-check-input"
                                                         name="active"
                                                         onChange={[Function]}
                                                         type="checkbox"
                                           />
                                           <label
-                                                        className="custom-control-label"
+                                                        className="form-check-label"
                                           >
                                                         Is Active ?
                                           </label>
@@ -1825,17 +1825,17 @@ ShallowWrapper {
                                 />
                 </div>
                 <div
-                                className="custom-control custom-checkbox"
+                                className="form-check"
                 >
                                 <input
                                                 checked={undefined}
-                                                className="custom-control-input"
+                                                className="form-check-input"
                                                 name="active"
                                                 onChange={[Function]}
                                                 type="checkbox"
                                 />
                                 <label
-                                                className="custom-control-label"
+                                                className="form-check-label"
                                 >
                                                 Is Active ?
                                 </label>
@@ -1879,17 +1879,17 @@ ShallowWrapper {
                     />
 </div>,
                   <div
-                    className="custom-control custom-checkbox"
+                    className="form-check"
 >
                     <input
                                         checked={undefined}
-                                        className="custom-control-input"
+                                        className="form-check-input"
                                         name="active"
                                         onChange={[Function]}
                                         type="checkbox"
                     />
                     <label
-                                        className="custom-control-label"
+                                        className="form-check-label"
                     >
                                         Is Active ?
                     </label>
@@ -2010,18 +2010,18 @@ ShallowWrapper {
                     "children": Array [
                       <input
                         checked={undefined}
-                        className="custom-control-input"
+                        className="form-check-input"
                         name="active"
                         onChange={[Function]}
                         type="checkbox"
 />,
                       <label
-                        className="custom-control-label"
+                        className="form-check-label"
 >
                         Is Active ?
 </label>,
                     ],
-                    "className": "custom-control custom-checkbox",
+                    "className": "form-check",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -2031,7 +2031,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "checked": undefined,
-                        "className": "custom-control-input",
+                        "className": "form-check-input",
                         "name": "active",
                         "onChange": [Function],
                         "type": "checkbox",
@@ -2046,7 +2046,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": "Is Active ?",
-                        "className": "custom-control-label",
+                        "className": "form-check-label",
                       },
                       "ref": null,
                       "rendered": "Is Active ?",
