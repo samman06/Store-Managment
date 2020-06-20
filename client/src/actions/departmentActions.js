@@ -14,7 +14,7 @@ export const addDepartmentAction = (departmentData) => async (dispatch) => {
     dispatch({ type: CLEAR_ERRORS });
     try {
         const { data } = await axios.post(`${URI}/departments/`, departmentData);
-        if (data.category) return dispatch({ type: ADD_DEPARTMENT, payload: data.category });
+        if (data.department) return dispatch({ type: ADD_DEPARTMENT, payload: data.department });
         else return dispatch({ type: GET_ERRORS, payload: data.errors });
     } catch (e) {
         console.log('data will be send later');

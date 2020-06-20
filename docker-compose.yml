@@ -1,0 +1,23 @@
+db:
+  image: mongo
+  ports:
+    - "27017:27017"
+  restart: always
+web:
+  build: .
+  volumes:
+    - ./:/app
+  ports:
+    - "4000:4000"
+  links:
+    - db
+  container_name: truflaServer
+  command: nodemon /app/index.js
+client:
+  build: ./client
+  volumes:
+    - ./client:/app/client
+  ports:
+    - "3000:3000"
+  container_name: truflaClient
+  command: npm start /app/client
