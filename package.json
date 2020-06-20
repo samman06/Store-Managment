@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch *.js",
+    "test": "mocha",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
@@ -19,9 +19,12 @@
     "validator": "^10.11.0"
   },
   "devDependencies": {
-    "jest": "^26.0.1"
+    "chai": "^3.5.0",
+    "chai-http": "^1.0.0",
+    "jest": "^26.0.1",
+    "mocha": "^7.2.0"
   },
-    "engines" : {
-      "node" : "12.16.3"
-    }
+  "engines": {
+    "node": "12.16.3"
+  }
 }
