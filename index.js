@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const expressValidator = require('express-validator');
 const bodyParser = require('body-parser');
 const keys = require('./configs/keys');
+const path = require('path');
 
 const department = require('./routes/Department');
 const promotion = require('./routes/Promotion');
@@ -31,6 +32,14 @@ app.use('/departments', department);
 app.use('/promotions', promotion);
 // products router
 app.use('/products', product);
+
+//server static assets if in production
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static('client/build'));
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build','index.html'))
+    })
+}
 
 app.listen(PORT, (req, res) => {
     console.log("server running on port: " + PORT);
