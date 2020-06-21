@@ -2327,9 +2327,9 @@ ShallowWrapper {
                                 </label>
                                 <input
                                         className="form-control"
-                                        name="name"
+                                        name="price"
                                         onChange={[Function]}
-                                        type="name"
+                                        type="number"
                                         value={undefined}
                                 />
                         </div>
@@ -2424,9 +2424,9 @@ ShallowWrapper {
                                     </label>
                                     <input
                                                 className="form-control"
-                                                name="name"
+                                                name="price"
                                                 onChange={[Function]}
-                                                type="name"
+                                                type="number"
                                                 value={undefined}
                                     />
                         </div>
@@ -2532,9 +2532,9 @@ ShallowWrapper {
                             </label>
                             <input
                                           className="form-control"
-                                          name="name"
+                                          name="price"
                                           onChange={[Function]}
-                                          type="name"
+                                          type="number"
                                           value={undefined}
                             />
               </div>
@@ -2596,9 +2596,9 @@ ShallowWrapper {
                   </label>
                   <input
                                     className="form-control"
-                                    name="name"
+                                    name="price"
                                     onChange={[Function]}
-                                    type="name"
+                                    type="number"
                                     value={undefined}
                   />
 </div>,
@@ -2695,9 +2695,9 @@ ShallowWrapper {
 </label>,
                     <input
                       className="form-control"
-                      name="name"
+                      name="price"
                       onChange={[Function]}
-                      type="name"
+                      type="number"
                       value={undefined}
 />,
                     undefined,
@@ -2723,9 +2723,9 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "className": "form-control",
-                      "name": "name",
+                      "name": "price",
                       "onChange": [Function],
-                      "type": "name",
+                      "type": "number",
                       "value": undefined,
                     },
                     "ref": null,
@@ -2964,9 +2964,9 @@ ShallowWrapper {
                                         </label>
                                         <input
                                                   className="form-control"
-                                                  name="name"
+                                                  name="price"
                                                   onChange={[Function]}
-                                                  type="name"
+                                                  type="number"
                                                   value={undefined}
                                         />
                               </div>
@@ -3061,9 +3061,9 @@ ShallowWrapper {
                                           </label>
                                           <input
                                                         className="form-control"
-                                                        name="name"
+                                                        name="price"
                                                         onChange={[Function]}
-                                                        type="name"
+                                                        type="number"
                                                         value={undefined}
                                           />
                             </div>
@@ -3169,9 +3169,9 @@ ShallowWrapper {
                                 </label>
                                 <input
                                                 className="form-control"
-                                                name="name"
+                                                name="price"
                                                 onChange={[Function]}
-                                                type="name"
+                                                type="number"
                                                 value={undefined}
                                 />
                 </div>
@@ -3233,9 +3233,9 @@ ShallowWrapper {
                     </label>
                     <input
                                         className="form-control"
-                                        name="name"
+                                        name="price"
                                         onChange={[Function]}
-                                        type="name"
+                                        type="number"
                                         value={undefined}
                     />
 </div>,
@@ -3332,9 +3332,9 @@ ShallowWrapper {
 </label>,
                       <input
                         className="form-control"
-                        name="name"
+                        name="price"
                         onChange={[Function]}
-                        type="name"
+                        type="number"
                         value={undefined}
 />,
                       undefined,
@@ -3360,9 +3360,9 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "className": "form-control",
-                        "name": "name",
+                        "name": "price",
                         "onChange": [Function],
-                        "type": "name",
+                        "type": "number",
                         "value": undefined,
                       },
                       "ref": null,
@@ -3587,11 +3587,26 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [],
-      "className": "row justify-content-around",
+      "children": <div
+        className="card-deck"
+>
+        
+</div>,
+      "className": "product-container",
     },
     "ref": null,
-    "rendered": Array [],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [],
+        "className": "card-deck",
+      },
+      "ref": null,
+      "rendered": Array [],
+      "type": "div",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -3600,11 +3615,26 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [],
-        "className": "row justify-content-around",
+        "children": <div
+          className="card-deck"
+>
+          
+</div>,
+        "className": "product-container",
       },
       "ref": null,
-      "rendered": Array [],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "card-deck",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "div",
+      },
       "type": "div",
     },
   ],
