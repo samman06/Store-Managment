@@ -51,11 +51,11 @@ if you have the same name in your databases please change the name in my keys.js
 #### List Product 3
 ![alt text](./client/Images/productList3.png)
 
+#### List Product 4
+![alt text](./client/Images/productList4.png)
+
 #### Add Product Modal
 ![alt text](./client/Images/productAddModal.png)
-
-#### Edit Product Modal
-![alt text](./client/Images/productEditModal.png)
 
 #### List Department 1
 ![alt text](./client/Images/departmentList1.png)
@@ -63,12 +63,14 @@ if you have the same name in your databases please change the name in my keys.js
 #### List Department 2
 ![alt text](./client/Images/departmentList2.png)
 
+#### List Department 3
+![alt text](./client/Images/departmentList3.png)
+
+#### List Department 3
+![alt text](./client/Images/departmentList3.png)
+
 #### Add Department Modal
 ![alt text](./client/Images/departmentAddModal.png)
-
-#### Edit Department Modal
-![alt text](./client/Images/departmentEditModal.png)
-
 
 #### List Promotion 1
 ![alt text](./client/Images/promotionList1.png)
@@ -85,6 +87,6 @@ if you have the same name in your databases please change the name in my keys.js
 #### Add Promotion Modal
 ![alt text](./client/Images/promotionAddModal.png)
 
-#### Edit Promotion Modal
-![alt text](./client/Images/promotionEditModal.png)
+#### Clinet Test
+![alt text](./client/Images/clientTests.png)
 
