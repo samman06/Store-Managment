@@ -29,6 +29,11 @@ if you have the same name in your databases please change the name in my keys.js
 * 8 ) Run npm start
 * 9 ) Enjoy.
 
+## Run with docker-compose
+* 1 ) Download the project.
+* 1 ) Enter the project folder.
+* 1 ) Run docker-compose -p trufla up
+
 ## Testing
 * 1 ) You should have mocha on your machine.
 * 2 ) For server side enter the project folder.
