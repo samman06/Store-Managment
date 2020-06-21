@@ -24,7 +24,6 @@ export const addProductAction = (productData) => async (dispatch) => {
     try {
         dispatch({type: CLEAR_ERRORS});
         const {data} = await axios.post(`${URI}/products/`, productData);
-        console.log(data);
         if (data.product) dispatch({type:ADD_PRODUCT,payload:data.product});
         else dispatch({type: GET_ERRORS, payload: data.errors});
         return data.product

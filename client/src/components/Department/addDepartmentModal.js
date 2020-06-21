@@ -1,5 +1,5 @@
 import React from 'react';
-import {Modal, ModalHeader} from "reactstrap";
+import {Modal} from "reactstrap";
 
 const addDepartmentModal = (props) => {
     const toggleAddModal = () => props.toggleAddModal();

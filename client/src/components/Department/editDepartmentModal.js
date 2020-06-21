@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormGroup, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
+import {Modal} from "reactstrap";
 
 const EditModal = (props) => {
     const toggleEditModal = ({target}) => props.toggleEditModal(target);

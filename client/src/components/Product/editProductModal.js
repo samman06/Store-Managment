@@ -26,7 +26,7 @@ const editProductModal = (props) => {
                         </div>
                         <div className="form-group">
                             <label>Price</label>
-                            <input type="name" className="form-control" name="name" value={product.price} onChange={onChange}/>
+                            <input type="number" className="form-control" name="price" value={product.price} onChange={onChange}/>
                             {errors.price && <span className="error">{errors.price}</span>}
                         </div>
                         <div className="form-group">

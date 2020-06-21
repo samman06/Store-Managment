@@ -1,6 +1,5 @@
 import React from 'react';
 import {Modal, ModalHeader} from "reactstrap";
-import {Link} from "react-router-dom";
 
 const addProductModal = (props) => {
     const onChange = ({target}) => props.onChange(target);

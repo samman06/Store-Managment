@@ -54,11 +54,13 @@ const PromotionOperations = () => {
     const addPromotion = async () => {
         const promotion = await dispatch(addPromotionAction({discount, code, promotionId, active}));
         console.log(promotion);
-        setCode("");
-        setDiscount("");
-        setPromotionId("");
-        setActive(false);
-        setEditModal(false);
+        if(promotion) {
+            setCode("");
+            setDiscount("");
+            setPromotionId("");
+            setActive(false);
+            setAddModal(false);
+        }
     };
     const editPromotion = async () => {
         const {message} = await dispatch(editPromotionAction(promotionId, {code, promotionId, active, discount}));

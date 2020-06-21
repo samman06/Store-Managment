@@ -7,7 +7,7 @@ const Home =()=>{
     return (
         <nav className="navbar navbar-expand-md bg-dark navbar-dark">
             <Link to={"/"}>
-                <img className="navbar-brand" width="100px" src={require('../../Styles/trufla-logo.png')} />
+                <img className="navbar-brand" alt="logo" width="100px" src={require('../../Styles/trufla-logo.png')} />
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavbar">
