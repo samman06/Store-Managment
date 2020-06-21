@@ -27,7 +27,6 @@ const PromotionOperations = () => {
         errors,
     }));
     const onChange = (target) => {
-        console.log(target);
         if (target.name === "code") setCode(target.value);
         if (target.name === "discount") setDiscount(target.value);
         if (target.name === "active") setActive(target.checked);

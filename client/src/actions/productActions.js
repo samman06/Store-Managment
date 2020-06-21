@@ -41,7 +41,6 @@ export const deleteProductAction = (id) => async (dispatch) => {
 };
 export const editProductAction = (id, productData) => async (dispatch) => {
     try {
-        console.log(productData);
         let {data} = await axios.put(`${URI}/products/${id}`, productData);
         if (!data.message) dispatch({type: GET_ERRORS, payload: data.errors});
         else await dispatch(getProductsAction());

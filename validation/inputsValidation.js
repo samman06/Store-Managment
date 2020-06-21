@@ -18,8 +18,8 @@ class inputsValidation {
         name = !this.isEmpty(name) ? name : "";
         if (!validator.isLength(name, {min: 3, max: 25}))
             errors.name = "name must be between 3 and 25 characters";
-        if (!Number(price) || Number(price) < 10 || Number(price) > 15000)
-            errors.price = "The Price must be number and between 3 and 15000";
+        if (!Number(price) || Number(price) < 100 || Number(price) > 15000)
+            errors.price = "The Price must be number and between 100 and 15000";
         return {
             errors,
             isValid: this.isEmpty(errors),
