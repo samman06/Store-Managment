@@ -10,7 +10,7 @@ import {
 import DepartmentItem from "./departmentItem"
 import AddDepartmentModal from "./addDepartmentModal"
 import EditDepartmentModal from "./editDepartmentModal";
-
+import "../../Styles/department.css";
 const DepartmentOperations = () => {
     const [name, setName] = useState();
     const [departmentId, setDepartmentId] = useState();

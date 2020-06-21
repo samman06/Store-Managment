@@ -10,7 +10,7 @@ import {
     editPromotionAction,
     getPromotionsAction
 } from "../../actions/promotionActions";
-
+import "../../Styles/promotion.css";
 const PromotionOperations = () => {
     const [addModal, setAddModal] = useState(false);
     const [editModal, setEditModal] = useState(false);

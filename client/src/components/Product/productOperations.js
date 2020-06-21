@@ -15,10 +15,11 @@ import {
     searchAction
 } from "../../actions/productActions";
 import Pagination from './Pagination';
+import "../../Styles/product.css";
 
 const ProductOperations = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const [productsPerPage] = useState(3);
+    const [productsPerPage] = useState(4);
     const [addModal, setAddModal] = useState(false);
     const [editModal, setEditModal] = useState(false);
     const [name, setName] = useState();
