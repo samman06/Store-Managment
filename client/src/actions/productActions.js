@@ -9,8 +9,10 @@ import {
     DEPARTMENT_FILTER_PRODUCT,
     PROMOTION_FILTER_PRODUCT
 } from "./types";
-
-const URI = "http://localhost:4000";
+let URI = "http://localhost:4000";
+if (process.env.NODE_ENV === "production") {
+    URI = "https://trufla.herokuapp.com"
+}
 export const getProductsAction = () => async (dispatch) => {
     dispatch({type: CLEAR_ERRORS});
     try {

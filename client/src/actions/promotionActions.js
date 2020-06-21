@@ -1,7 +1,10 @@
 import axios from "axios";
 import {GET_PROMOTIONS,ADD_PROMOTION, CLEAR_ERRORS, DELETE_PROMOTION, GET_ERRORS} from "./types";
 
-const URI = "http://localhost:4000";
+let URI = "http://localhost:4000";
+if (process.env.NODE_ENV === "production") {
+    URI = "https://trufla.herokuapp.com"
+}
 export const getPromotionsAction = () => async (dispatch) => {
     dispatch({type: CLEAR_ERRORS});
     try {
