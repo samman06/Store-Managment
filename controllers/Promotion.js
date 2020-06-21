@@ -32,8 +32,10 @@ class Promotions {
         const {errors, isValid} = validation.validatePromotionInputs(code, discount);
         if (!isValid) return res.json({errors});
         try {
-            let promotion = await promotionModel.findOne({code});
-            if (promotion && String(promotion._id) !== req.params.id) return res.json({errors: {code: 'Promotion already exists'}});
+
+            let promotion = await promotionModel.findOne({_id: req.params.id});
+            if (promotion && promotion.code === code && promotion.active === active && promotion.discount === discount)
+                return res.json({errors: {code: 'Promotion already exists'}});
             await promotionModel.updateOne({_id: req.params.id}, {$set: {code, active, discount}});
             return res.json({message: 'updated'})
         } catch (err) {

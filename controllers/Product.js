@@ -46,8 +46,10 @@ class Products {
             if (!department) return res.json({errors: {departmentId: "department doesn't exists"}});
             let promotion = await PromotionModel.findById(promotionId);
             if (!promotion) return res.json({errors: {promotionId: "promotion doesn't exists"}});
-            let product = await ProductModel.findOne({name});
-            if (product && String(product._id) !== req.params.id) return res.json({errors: {name: 'product already exists'}});
+            let product = await ProductModel.findOne({_id: req.params.id});
+            if (product && product.name === name && String(product.departmentId) === departmentId && product.price === Number(price) && String(product.promotionId) === promotionId) {
+                return res.json({errors: {name: 'product already exists'}});
+            }
             await ProductModel.updateOne({_id: req.params.id}, {$set: {name, price, departmentId, promotionId}});
             return res.json({message: 'updated'})
         } catch (err) {
