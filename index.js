@@ -27,11 +27,11 @@ mongoose.connect(uri, {useNewUrlParser: true})
     });
 
 //departments router
-app.use('/departments', department);
+app.use('/department', department);
 // promotions router
-app.use('/promotions', promotion);
+app.use('/promotion', promotion);
 // products router
-app.use('/products', product);
+app.use('/product', product);
 
 //server static assets if in production
 if (process.env.NODE_ENV === "production") {

@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === "production") {
 export const getDepartments = () => async (dispatch) => {
     dispatch({type: CLEAR_ERRORS});
     try {
-        const {data} = await axios.get(`${URI}/departments/`);
+        const {data} = await axios.get(`${URI}/department/`);
         return dispatch({type: GET_DEPARTMENTS, payload: data});
     } catch (e) {
         return dispatch({type: GET_DEPARTMENTS, payload: []});
@@ -17,7 +17,7 @@ export const getDepartments = () => async (dispatch) => {
 export const addDepartmentAction = (departmentData) => async (dispatch) => {
     dispatch({type: CLEAR_ERRORS});
     try {
-        const {data} = await axios.post(`${URI}/departments/`, departmentData);
+        const {data} = await axios.post(`${URI}/department/`, departmentData);
         console.log(data);
         if (data.department) return dispatch({type: ADD_DEPARTMENT, payload: data.department});
         else return dispatch({type: GET_ERRORS, payload: data.errors});
@@ -27,7 +27,7 @@ export const addDepartmentAction = (departmentData) => async (dispatch) => {
 };
 export const deleteDepartmentAction = (id) => async (dispatch) => {
     try {
-        const {data} = await axios.delete(`${URI}/departments/${id}`);
+        const {data} = await axios.delete(`${URI}/department/${id}`);
         if (data.message) return dispatch({type: DELETE_DEPARTMENT, payload: id})
     } catch (e) {
         console.log("Data Not Deleted");
@@ -35,7 +35,7 @@ export const deleteDepartmentAction = (id) => async (dispatch) => {
 };
 export const editDepartmentAction = (id, categoryData) => async (dispatch) => {
     try {
-        let {data} = await axios.put(`${URI}/departments/${id}`, categoryData);
+        let {data} = await axios.put(`${URI}/department/${id}`, categoryData);
         if (!data.message) dispatch({type: GET_ERRORS, payload: data.errors});
         else await dispatch(getDepartments());
         return data

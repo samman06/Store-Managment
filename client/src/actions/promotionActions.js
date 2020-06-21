@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === "production") {
 export const getPromotionsAction = () => async (dispatch) => {
     dispatch({type: CLEAR_ERRORS});
     try {
-        const {data} = await axios.get(`${URI}/promotions/`);
+        const {data} = await axios.get(`${URI}/promotion/`);
         return dispatch({type: GET_PROMOTIONS, payload: data});
     } catch (e) {
         return dispatch({type: GET_PROMOTIONS, payload: []});
@@ -17,7 +17,7 @@ export const getPromotionsAction = () => async (dispatch) => {
 export const addPromotionAction = (promotionData) => async (dispatch) => {
     try {
         dispatch({type: CLEAR_ERRORS});
-        const {data} = await axios.post(`${URI}/promotions/`, promotionData);
+        const {data} = await axios.post(`${URI}/promotion/`, promotionData);
         if (data.promotion) dispatch({type: ADD_PROMOTION, payload: data.promotion});
         else dispatch({type: GET_ERRORS, payload: data.errors});
         return data.promotion
@@ -27,7 +27,7 @@ export const addPromotionAction = (promotionData) => async (dispatch) => {
 };
 export const deletePromotionAction = (id) => async (dispatch) => {
     try {
-        const {data} = await axios.delete(`${URI}/promotions/${id}`);
+        const {data} = await axios.delete(`${URI}/promotion/${id}`);
         if (data.message) return dispatch({type: DELETE_PROMOTION, payload: id})
         else dispatch({type: GET_ERRORS, payload: data.errors});
     } catch (e) {
@@ -36,7 +36,7 @@ export const deletePromotionAction = (id) => async (dispatch) => {
 };
 export const editPromotionAction = (id, promotionData) => async (dispatch) => {
     try {
-        let {data} = await axios.put(`${URI}/promotions/${id}`, promotionData);
+        let {data} = await axios.put(`${URI}/promotion/${id}`, promotionData);
         if (!data.message) dispatch({type: GET_ERRORS, payload: data.errors});
         else await dispatch(getPromotionsAction());
         return data

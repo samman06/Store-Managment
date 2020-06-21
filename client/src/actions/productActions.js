@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 export const getProductsAction = () => async (dispatch) => {
     dispatch({type: CLEAR_ERRORS});
     try {
-        const {data} = await axios.get(`${URI}/products/`);
+        const {data} = await axios.get(`${URI}/product/`);
         return dispatch({type: GET_PRODUCTS, payload: data});
     } catch (e) {
         return dispatch({type: GET_PRODUCTS, payload: []});
@@ -25,7 +25,7 @@ export const getProductsAction = () => async (dispatch) => {
 export const addProductAction = (productData) => async (dispatch) => {
     try {
         dispatch({type: CLEAR_ERRORS});
-        const {data} = await axios.post(`${URI}/products/`, productData);
+        const {data} = await axios.post(`${URI}/product/`, productData);
         if (data.product) dispatch({type:ADD_PRODUCT,payload:data.product});
         else dispatch({type: GET_ERRORS, payload: data.errors});
         return data.product
@@ -35,7 +35,7 @@ export const addProductAction = (productData) => async (dispatch) => {
 };
 export const deleteProductAction = (id) => async (dispatch) => {
     try {
-        const {data} = await axios.delete(`${URI}/products/${id}`);
+        const {data} = await axios.delete(`${URI}/product/${id}`);
         if (data.message) return dispatch({type: DELETE_PRODUCT, payload: id})
     } catch (e) {
         console.log('data not deleted');
@@ -43,7 +43,7 @@ export const deleteProductAction = (id) => async (dispatch) => {
 };
 export const editProductAction = (id, productData) => async (dispatch) => {
     try {
-        let {data} = await axios.put(`${URI}/products/${id}`, productData);
+        let {data} = await axios.put(`${URI}/product/${id}`, productData);
         if (!data.message) dispatch({type: GET_ERRORS, payload: data.errors});
         else await dispatch(getProductsAction());
         return data.message
