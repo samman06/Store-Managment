@@ -20,14 +20,14 @@
 }
 @media (max-width: 1250px) {
     .product-card {
-        width: 32%;
+        width: 47%;
     }
 }
-@media (max-width: 900px) {
-    .product-card {
-        width: 45%;
-    }
-}
+/*@media (max-width: 900px) {*/
+    /*.product-card {*/
+        /*width: 45%;*/
+    /*}*/
+/*}*/
 @media (max-width: 600px) {
     .product-card {
         width: 100%;

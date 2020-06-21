@@ -6,7 +6,8 @@ import store from './store';
 import './App.css';
 
 import Footer from "./components/layout/Footer";
-import Nav from "./components/layout/Nav";
+import Nav from "./components/layout/NavBar";
+import Home from "./components/layout/Home";
 import Departments from "./components/Department/departmentOperations"
 import Products from "./components/Product/productOperations"
 import Promotions from "./components/Promotion/promotionOperations"
@@ -17,6 +18,7 @@ const App = () => {
             <BrowserRouter>
                 <div className="App">
                     <Route path='/' exact component={Nav}/>
+                    <Route path='/' exact component={Home}/>
                     <Route path='/' exact component={Footer}/>
 
                     <Route path='/departments' exact component={Nav}/>

@@ -2,6 +2,7 @@
 node_modules/
 package-lock.json
 ./client/node_modules/
+./client/package-lock.json
 ./client/coverage/
 ./client/src/test/department/__snapshots__/
 ./client/src/test/product/__snapshots__/

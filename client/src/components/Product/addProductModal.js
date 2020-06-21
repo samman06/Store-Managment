@@ -1,12 +1,13 @@
-import React from 'react';
-import {Modal, ModalHeader} from "reactstrap";
+import React, {useState} from 'react';
+import {Collapse, Modal, NavbarBrand, NavbarToggler} from "reactstrap";
 
 const addProductModal = (props) => {
     const onChange = ({target}) => props.onChange(target);
     const toggleAddModal = () => props.toggleAddModal();
     const search = () => props.search();
     const addProduct = () => props.addProduct();
-
+    const [isNavOpen, setIsNavOpen] = useState(false)
+    const toggle = () => setIsNavOpen(!isNavOpen)
     const {promotions, departments, isOpen, errors,promotionFilter,departmentFilter} = props;
     let allDepartments, allPromotions;
     if (promotions)
@@ -17,28 +18,25 @@ const addProductModal = (props) => {
         <div>
             <nav className="navbar navbar-expand-md bg-light navbar-light mt-2">
                 <button
-                    onClick={toggleAddModal} className='btn btn-info navbar-brand'>
+                    onClick={toggleAddModal} className='mb-1 btn btn-info navbar-brand'>
                     Add Product +
                 </button>
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
+                <NavbarToggler onClick={toggle}/>
+                <Collapse isOpen={isNavOpen} navbar>
+                    <ul className="mr-auto navbar-nav">
+                        <li className="nav-item mb-1 mr-1">
                             <select value={departmentFilter} className="form-control nav-link" name="departmentFilter" onChange={onChange}>
                                 <option value="All">All Departments</option>
                                 {allDepartments}
                             </select>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item mb-1 mr-1">
                             <select value={promotionFilter} className="form-control nav-link" name="promotionFilter" onChange={onChange}>
                                 <option value="All">All Promotions</option>
                                 {allPromotions}
                             </select>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item mb-1 mr-1">
                             <input className="form-control nav-link" name="searchName" placeholder="Product Name"
                                    onChange={onChange}/>
                         </li>
@@ -50,12 +48,12 @@ const addProductModal = (props) => {
                         </li>
 
                     </ul>
-                </div>
+                </Collapse>
             </nav>
 
 
             <Modal isOpen={isOpen} toggle={toggleAddModal}>
-                <ModalHeader toggle={toggleAddModal}>Add Product</ModalHeader>
+                <div className="modal-header">Add Product</div>
                 <div className="modal-body">
                     <div className="form-group">
                         <input className="form-control" name="name" id="name" type="text"
